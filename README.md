@@ -4,6 +4,7 @@ A Sublime Text 2 syntax highlighter for Aruba Networks configs.
 I made this highlighter in order to make it easier to glance through configs and find specific sections quickly.  It doesn't catch everything but will grab the vast majority of a config.
 This syntax highlighter just shades certain portions of the config to all for easy skimming. For example, all "ip access-list" entries are shaded with one pair of colors and all "interface" entries are a different set of colors.
 
+![screenshot]http://mww012.github.io/sublimetext2-aruba/aruba_config.png
 
 Installation:
 1. Copy the ArubaSyntax folder to the Sublime Text 2 plugin repository on your machine.
@@ -13,7 +14,7 @@ Installation:
 
 2. Move arubasyntax.sublime-settings to the Packages/User folder.
 
-3. You should now have a functioning syntax highlighter called Aruba Config.
+3. You should now have a functioning syntax highlighter called Aruba Config.  Just change your syntax to Aruba Config
 
 For any edits, you'll need the AAAPackageDev plugin installed.
 All coloring is found in the .tmTheme file while the syntax definition are all in the .tmLanguage file.
