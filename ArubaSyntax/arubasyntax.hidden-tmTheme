@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<!-- GLOBAL -->
+	<key>name</key>
+	<string>Aruba Config</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#002B36</string>
+                <key>gutterForeground</key>
+                <string>#363636aa</string>
+				<key>caret</key>
+				<string>#F8F8F0</string>
+				<key>foreground</key>
+				<string>#F8F8F222</string>
+				<key>invisibles</key>
+				<string>#FF3A32</string>
+				<key>lineHighlight</key>
+				<string>#18181840</string>
+				<key>selection</key>
+				<string>#49483E</string>
+				<key>findHighlight</key>
+				<string>#FFE792</string>
+				<key>findHighlightForeground</key>
+				<string>#000000</string>
+				<key>selectionBorder</key>
+				<string>#222218</string>
+				<key>activeGuide</key>
+				<string>#FF550F50</string>
+				<key>guide</key>
+				<string>#303030</string>
+				<key>stackGuide</key>
+				<string>#75715E30</string>
+				<key>bracketsForeground</key>
+				<string>#F8F8F2A5</string>
+				<key>bracketsOptions</key>
+				<string>underline</string>
+				<key>bracketContentsForeground</key>
+				<string>#F8F8F245</string>
+				<key>bracketContentsOptions</key>
+				<string>underline</string>
+				<key>tagsOptions</key>
+				<string>stippled_underline</string>
+			</dict>
+		</dict>
+
+
+<!-- VERSION -->
+		<dict>
+			<key>name</key>
+			<string>version</string>
+			<key>scope</key>
+			<string>version.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF0000</string>
+			</dict>
+		</dict>
+
+
+<!-- HOSTNAME -->
+		<dict>
+			<key>name</key>
+			<string>hostname</string>
+			<key>scope</key>
+			<string>hostname.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66D9EF</string>
+			</dict>
+		</dict>
+
+
+<!-- NETSERVICE -->
+		<dict>
+			<key>name</key>
+			<string>netservice</string>
+			<key>scope</key>
+			<string>netservice.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#519331</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>netservice name</string>
+			<key>scope</key>
+			<string>netservice.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#7AB85C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>netservice protocol</string>
+			<key>scope</key>
+			<string>netservice.proto.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#334AB5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>netservice port</string>
+			<key>scope</key>
+			<string>netservice.port.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66D630</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>netservice list</string>
+			<key>scope</key>
+			<string>netservice.list.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9EA903</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>netservice alg</string>
+			<key>scope</key>
+			<string>netservice.alg.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E8F437</string>
+			</dict>
+		</dict>
+
+
+<!-- NETDESTINATION -->
+		<dict>
+			<key>name</key>
+			<string>netdestination</string>
+			<key>scope</key>
+			<string>netdest.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ABAF77</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>netdestination name</string>
+			<key>scope</key>
+			<string>netdest.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A76DB9</string>
+			</dict>
+		</dict>
+
+
+<!-- NETEXTHDR -->
+		<dict>
+			<key>name</key>
+			<string>Netexthdr</string>
+			<key>scope</key>
+			<string>netexthdr.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00D800</string>
+			</dict>
+		</dict>
+
+
+<!-- TIME-RANGE -->
+		<dict>
+			<key>name</key>
+			<string>Time Range</string>
+			<key>scope</key>
+			<string>timerange.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF8300</string>
+			</dict>
+		</dict>
+
+
+<!-- IP -->
+		<dict>
+			<key>name</key>
+			<string>IP Access List</string>
+			<key>scope</key>
+			<string>ip.acl.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FAC082</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>ACL Name</string>
+			<key>scope</key>
+			<string>ip.acl.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5CB8D7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>ACL Source/Destination</string>
+			<key>scope</key>
+			<string>ip.acl.srcdst.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF8300</string>
+			</dict>
+		</dict>
+
+
+<!-- USER-RULE -->
+		<dict>
+			<key>name</key>
+			<string>User Role</string>
+			<key>scope</key>
+			<string>role.user.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00769D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>User Role Name</string>
+			<key>scope</key>
+			<string>role.user.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF8300</string>
+			</dict>
+		</dict>
+
+
+<!-- INTERFACE -->
+		<dict>
+			<key>name</key>
+			<string>Interface</string>
+			<key>scope</key>
+			<string>interface.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#87871E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Interface Name</string>
+			<key>scope</key>
+			<string>interface.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#9762B7</string>
+			</dict>
+		</dict>
+
+
+<!-- AIRGROUP -->
+		<dict>
+			<key>name</key>
+			<string>Airgroup</string>
+			<key>scope</key>
+			<string>airgroup.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#AF60DB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Airgroup Service Name</string>
+			<key>scope</key>
+			<string>airgroup.service.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFF0E</string>
+			</dict>
+		</dict>
+
+
+<!-- AP -->
+		<dict>
+			<key>name</key>
+			<string>AP Profile</string>
+			<key>scope</key>
+			<string>ap.profile.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFECC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>AP Profile Name</string>
+			<key>scope</key>
+			<string>ap.profile.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E378AC</string>
+			</dict>
+		</dict>
+
+
+<!-- RF -->
+		<dict>
+			<key>name</key>
+			<string>RF Profile</string>
+			<key>scope</key>
+			<string>rf.profile.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BB73F2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>RF Profile Name </string>
+			<key>scope</key>
+			<string>rf.profile.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFA70</string>
+			</dict>
+		</dict>
+
+
+<!-- WLAN -->
+		<dict>
+			<key>name</key>
+			<string>WLAN Profile</string>
+			<key>scope</key>
+			<string>wlan.profile.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#75ABF1</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>WLAN Profile Name </string>
+			<key>scope</key>
+			<string>wlan.profile.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFC870</string>
+			</dict>
+		</dict>
+
+
+<!-- AP-GROUP/NAME -->
+		<dict>
+			<key>name</key>
+			<string>AP Group</string>
+			<key>scope</key>
+			<string>ap.group.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F97CBC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>AP Group Name</string>
+			<key>scope</key>
+			<string>ap.group.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#7B66E3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>AP Specific</string>
+			<key>scope</key>
+			<string>ap.specific.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#EA3290</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>AP Specific Name</string>
+			<key>scope</key>
+			<string>ap.specific.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#7B66E3</string>
+			</dict>
+		</dict>
+
+
+<!-- AAA -->
+		<dict>
+			<key>name</key>
+			<string>AAA Profile</string>
+			<key>scope</key>
+			<string>aaa.profile.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF4B4B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>AAA Profile Name</string>
+			<key>scope</key>
+			<string>aaa.profile.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#42E142</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>AAA Derivation Profile Name</string>
+			<key>scope</key>
+			<string>aaa.profile.derivation.name.aruba</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#42E142</string>
+			</dict>
+		</dict>
+
+
+<!--	<dict>
+			<key>scope</key>
+			<string></string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string></string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string></string>
+			</dict>
+		</dict> 
+-->
+
+
+<!-- TESTING -->
+		<dict>
+			<key>name</key>
+			<string>test </string>
+			<key>scope</key>
+			<string>red.test</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF0000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>test </string>
+			<key>scope</key>
+			<string>blue.test</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0000FF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>test </string>
+			<key>scope</key>
+			<string>yellow.test</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFF00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>test </string>
+			<key>scope</key>
+			<string>green.test</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00FF00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>test </string>
+			<key>scope</key>
+			<string>purple.test</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#800080</string>
+			</dict>
+		</dict>
+
+
+
+
+
+
+	</array>
+	<key>uuid</key>
+	<string>62496568-679f-42c6-aeb1-1fe007886237</string>
+</dict>
+</plist>

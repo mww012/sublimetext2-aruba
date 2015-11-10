@@ -1,0 +1,177 @@
+# [PackageDev] target_format: plist, ext: tmLanguage.
+---
+name: Aruba Config
+scopeName: text.aruba
+fileTypes: [cfg]
+uuid: bcf827c8-b6fe-434a-8c83-35d186835bd7
+
+patterns:
+# VERSION
+- name: version.aruba
+  comment: Triggers on "hostname"
+  match: ^version\s(.*)
+
+
+# HOSTNAME
+- name: hostname.aruba
+  comment: Triggers on "hostname"
+  match: (hostname)\s"(.*)"
+
+
+# NETSERVICE
+- name:  netservice.aruba
+  comment:  Captures all netservice entries
+  match: ^netservice\s([a-zA-Z0-9\-]*)\s([tcp|udp|([0-9]{1,3})]+)\s(((list\s)([\"0-9\s]*))*)(([0-9\s]{1,5})*)(((alg)\s.+)*)
+  captures:
+    '1': {name:  netservice.name.aruba}
+    '2': {name:  netservice.proto.aruba}
+    '3': {name:  netservice.list.aruba}
+    '4': {name:  netservice.list.aruba}
+    '7': {name:  netservice.port.aruba}
+    '9': {name:  netservice.alg.aruba}
+
+
+# NETDESTINATION
+- name: netdest.aruba
+  comment: Captures all netdestination entries
+  begin: ^netdestination(6*)\s(([a-zA-Z0-9\-\_])+)
+  beginCaptures:
+    '2': {name: netdest.name.aruba}
+  end: \!
+
+
+# NETEXTHDR
+- name: netexthdr.aruba
+  comment: Captures all netexthdr entries
+  begin: ^netexthdr\s(.*)
+  end: \!
+
+
+# TIME-RANGE
+- name: timerange.aruba
+  comment: Captures all time-range entries
+  begin: ^time-range\s(.*)
+  end: \!
+
+
+# IP
+- name: ip.acl.aruba
+  comment: Captures all ip access-list entries
+  begin: ^ip\saccess-list\s(([a-zA-Z0-9\-\_])+)\s(([a-zA-Z0-9\-\_])+)
+  beginCaptures:
+    '3': {name: ip.acl.name.aruba}
+  end: \!
+
+
+# USER-ROLE
+- name: role.user.aruba
+  comment: Captures all user-role entries
+  begin: ^user-role\s([a-zA-Z0-9\-\_]+)
+  beginCaptures:
+    '1': {name: role.user.name.aruba}
+  end: \!
+
+
+# INTERFACE
+- name: interface.aruba
+  comment: Captures all interface entries
+  begin: ^interface\s([a-z\-]+)\s(([0-9])+)(\/*)(([0-9]{1,2})*)
+  beginCaptures:
+    '1': {name: interface.name.aruba}
+    '2': {name: interface.name.aruba}
+  end: \!
+
+
+# AIRGROUP
+- name: airgroup.aruba
+  comment: Captures all airgroup entries
+  begin: ^airgroup(service)?\s("(.*)")
+  beginCaptures:
+    '3': {name: airgroup.service.name.aruba}
+  end: \!
+
+
+# AP
+- name: ap.profile.aruba
+  comment: Captures all ap profile entries
+  begin: ^ap\s(.*)\s("(.*)")
+  beginCaptures:
+    '3': {name: ap.profile.name.aruba}
+  end: \!
+
+
+# RF
+- name: rf.profile.aruba
+  comment: Captures all rf profile entries
+  begin: ^rf\s(.*)\s("(.*)")
+  beginCaptures:
+    '3': {name: rf.profile.name.aruba}
+  end: \!
+    
+
+# WLAN
+- name: wlan.profile.aruba
+  comment: Captures all wlan profile entries
+  begin: ^wlan\s(.*)\s("(.*)")
+  beginCaptures:
+    '3': {name: wlan.profile.name.aruba}
+  end: \!
+
+
+# AP-GROUP
+- name: ap.group.aruba
+  comment: Captures all ap-group entries
+  begin: ^ap\-group\s(.*)("(.*)")
+  beginCaptures:
+    '3': {name: ap.group.name.aruba}
+  end: \!
+
+
+# AP-NAME
+- name: ap.specific.aruba
+  comment: Captures all ap-group entries
+  begin: ^ap\-name\s(.*)("(.*)")
+  beginCaptures:
+    '3': {name: ap.specific.name.aruba}
+  end: \!
+
+
+# AAA
+- name: aaa.profile.aruba
+  comment: Captures all aaa entries
+  begin: ^aaa\s(.*)\s("(.*)")
+  beginCaptures:
+    '3': {name: aaa.profile.name.aruba}
+  end: \!
+- name: aaa.profile.aruba
+  comment: Captures all aaa user-derivation entries
+  begin: ^aaa\s(derivation-rules)\s(user)\s(.*)
+  beginCaptures:
+    '3': {name: aaa.profile.derivation.name.aruba}
+  end: \!
+
+
+
+repository:
+  ipaddr:
+    match:  \b(?:\d{1,3}\.){3}\d{1,3}\b
+  
+
+
+
+
+
+
+
+# TESTING TEMPLATES:
+# - name: .aruba
+#   comment: 
+#   begin: 
+#   beginCaptures:
+#     '1': {name: red.test}
+#     '2': {name: blue.test}
+#     '3': {name: yellow.test}
+#     '4': {name: green.test}
+#     '5': {name: pruple.test}
+#   end: \!
+...
