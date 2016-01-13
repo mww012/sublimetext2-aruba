@@ -9,7 +9,8 @@ Installation:
 1. Copy the ArubaSyntax folder to the Sublime Text 2 plugin repository on your machine.
 	Mac:		Menu Bar: Sublime Text 2 => Preferences => Browse Packages...
 				Default Location: /Users/[user]/Library/Application Support/Sublime Text 2/Packages
-	Windows:	[insert windows default package path]
+	Windows:	Menu Bar: Sublime Text 2 => Preferences => Browse Packages...
+				C:\Users\[user]\AppData\Roaming\Sublime Text 2\Packages
 
 2. Move arubasyntax.sublime-settings to the Packages/User folder.
 
