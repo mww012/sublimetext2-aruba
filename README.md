@@ -11,7 +11,7 @@ Installation:
 	Mac:		Menu Bar: Sublime Text 2 => Preferences => Browse Packages...
 				Default Location: /Users/[user]/Library/Application Support/Sublime Text 2/Packages
 	Windows:	Menu Bar: Sublime Text 2 => Preferences => Browse Packages...
-				C:\Users\\[user]\AppData\Roaming\Sublime Text 2\Packages
+				C:\Users\\\[user]\AppData\Roaming\Sublime Text 2\Packages
 
 2. Move arubasyntax.sublime-settings to the Packages/User folder.
 
